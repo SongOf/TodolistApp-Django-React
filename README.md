@@ -20,13 +20,13 @@ Todo List 待办事项应用，使用：Django、Django Rest Framework、React�
 - 改变显示方式
 ![改变显示方式](https://imgchr.com/i/A7xYLQ)
 
-[![A7x3z8.gif](https://s2.ax1x.com/2019/04/11/A7x3z8.gif)](https://imgchr.com/i/A7x3z8)
-[![A7x1Rf.gif](https://s2.ax1x.com/2019/04/11/A7x1Rf.gif)](https://imgchr.com/i/A7x1Rf)
-[![A7xlJP.gif](https://s2.ax1x.com/2019/04/11/A7xlJP.gif)](https://imgchr.com/i/A7xlJP)
-[![A7xNZj.gif](https://s2.ax1x.com/2019/04/11/A7xNZj.gif)](https://imgchr.com/i/A7xNZj)
-[![A7xGQS.gif](https://s2.ax1x.com/2019/04/11/A7xGQS.gif)](https://imgchr.com/i/A7xGQS)
-[![A7xJsg.gif](https://s2.ax1x.com/2019/04/11/A7xJsg.gif)](https://imgchr.com/i/A7xJsg)
-[![A7xYLQ.gif](https://s2.ax1x.com/2019/04/11/A7xYLQ.gif)](https://imgchr.com/i/A7xYLQ)
+[![A7x3z8.md.gif](https://s2.ax1x.com/2019/04/11/A7x3z8.md.gif)](https://imgchr.com/i/A7x3z8)
+[![A7x1Rf.md.gif](https://s2.ax1x.com/2019/04/11/A7x1Rf.md.gif)](https://imgchr.com/i/A7x1Rf)
+[![A7xlJP.md.gif](https://s2.ax1x.com/2019/04/11/A7xlJP.md.gif)](https://imgchr.com/i/A7xlJP)
+[![A7xNZj.md.gif](https://s2.ax1x.com/2019/04/11/A7xNZj.md.gif)](https://imgchr.com/i/A7xNZj)
+[![A7xGQS.md.gif](https://s2.ax1x.com/2019/04/11/A7xGQS.md.gif)](https://imgchr.com/i/A7xGQS)
+[![A7xJsg.md.gif](https://s2.ax1x.com/2019/04/11/A7xJsg.md.gif)](https://imgchr.com/i/A7xJsg)
+[![A7xYLQ.md.gif](https://s2.ax1x.com/2019/04/11/A7xYLQ.md.gif)](https://imgchr.com/i/A7xYLQ)
 
 ## 配置方法
 
