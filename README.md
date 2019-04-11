@@ -37,3 +37,5 @@ pip install -r requirements.txt
 npm start
 python manage.py runserver
 ```
+python 版本：2.7.15
+Django 版本：1.8.19
