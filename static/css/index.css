@@ -143,7 +143,7 @@ body {
 		z-index: 3;
 }
 .form-control {
-	width: 80px;
+	width: 90px;
 }
 
 /* 各优先级对应的文本颜色 */
@@ -168,7 +168,7 @@ body {
 	z-index: 3;
 }
 .DayPickerInput input {
-	width: 80px;
+	width: 90px;
 	padding-left: 3px;
 }
 
@@ -242,6 +242,7 @@ input[type="checkbox"]:checked+.toggleLabel::before {
 		appearance: none;
 		outline: 0;
 		border: 0;
+		transition: color 0.4s;
 }
 
 
@@ -273,7 +274,10 @@ input[type="checkbox"]:checked+.toggleLabel::before {
 	color: #d9d9d9;
 	text-decoration: line-through;
 }
-
+.todo-list li.completed input{
+	color: #d9d9d9;
+	text-decoration: line-through;
+}
 
 /* 删除事项的按钮 */
 .todo-list li .delete::after {
