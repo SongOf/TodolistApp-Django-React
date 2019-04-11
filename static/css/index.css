@@ -1,0 +1,317 @@
+/* body */
+body {
+	font-family: SimSun,STSong,'Microsoft YaHei','Helvetica Neue',Arial,sans-serif;
+	font-weight: 300;
+	line-height: 1.4em;
+	background: #090c1ab3;
+	color: #4d4d4d;
+	min-width: 220px;
+	max-width: 560px;
+	margin: 0 auto;
+}
+
+
+/* 完整APP区域 */
+.todoapp {
+	position: relative;
+	background: #fff;
+	margin: 130px 0 40px 0;
+	border: 2px solid #fff;
+	border-radius: 6px;
+}
+
+
+/* header 标题区域 */
+.todoapp h1 {
+	position: absolute;
+	top: -100px;
+	width: 100%;
+	font-family: Kaiti;
+	font-size: 60px;
+	font-weight: 70;
+	text-align: center;
+	color: white;
+}
+
+
+/* menu 控制区域，包括剩余待办和显示方式控件 */
+.menu {
+	color: #777;
+	padding: 10px 15px;
+	height: 20px;
+	text-align: center;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+
+/* 当前待办事件数量 */
+.todo-active-count {
+	float: left;
+}
+.todo-active-count strong {
+	font-weight: 300;
+	color: red;
+}
+
+
+/* 显示方式控件 */
+.display-method {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	left: 0;
+	list-style: none;
+}
+
+.display-method li {
+	display: inline;
+	cursor: pointer;
+}
+
+.display-method li a {
+	margin: 3px;
+	padding: 3px 7px;
+	text-decoration: none;
+	border: 1px solid transparent;
+	border-radius: 3px;
+}
+
+.display-method li a:hover {
+	border-color: #4d4d4d;
+}
+
+.display-method li a.selected {
+	background-color: #52545e;
+	color: white;
+}
+
+
+/* 添加新待办输入框 */
+.add-todo-bar {
+	position: relative;
+}
+
+.add-todo {
+	padding: 15px 15px 15px 55px;
+	width: 100%;
+	position: relative;
+	font-size: 1.5em;
+	font-family: inherit;
+	border: 1px solid #edeaea;
+}
+
+/* 修改placeholder的样式（尚未形成规范） */
+.todoApp input::-webkit-input-placeholder {
+	font-style: italic;
+	font-weight: 300;
+	color: #999;
+}
+.todoApp input:-moz-placeholder {
+	font-style: italic;
+	font-weight: 300;
+	color: #999;
+}
+.todoApp input::-moz-placeholder {
+	font-style: italic;
+	font-weight: 300;
+	color: #999;
+}
+.todoApp input:-ms-input-placeholder {
+	font-style: italic;
+	font-weight: 300;
+	color: #999;
+}
+.todoApp input::input-placeholder {
+	font-style: italic;
+	font-weight: 300;
+	color: #999;
+}
+
+:focus {
+	/* 防止Chrome聚焦时出现蓝色边框 */
+	outline: 0;
+}
+
+/* 优先级选择 */
+.setPriority {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		text-align: center;
+		z-index: 3;
+}
+.form-control {
+	width: 80px;
+}
+
+/* 各优先级对应的文本颜色 */
+.lowPriority {
+	color: #92a3e2;
+}
+.middlePriority {
+	color: #f3b33e;
+}
+.highPriority {
+	color: #eb5b90;
+}
+.outdate {
+	color: #999;
+}
+
+/* 过期时间选择 */
+.DayPickerInput {
+	position: absolute;
+	top: 35px;
+	right: 10px;
+	z-index: 3;
+}
+.DayPickerInput input {
+	width: 80px;
+	padding-left: 3px;
+}
+
+
+/* TodoList 列表显示区域 */
+main {
+	font-weight: 400;
+	position: relative;
+	z-index: 2;
+	border-top: 1px solid #e6e6e6;
+}
+
+.todo-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.todo-list li {
+	position: relative;
+	font-size: 24px;
+	border-bottom: 1px solid #ededed;
+}
+
+.todo-list li:last-child {
+	/* 最后一行不显示底边框 */
+	border-bottom: none;
+}
+
+
+/* 事项完成勾选框，取消默认显示，用label绘制 */
+.todo-list li .todo-item .toggle {
+	text-align: center;
+	width: 40px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	opacity: 0;	    /* 不显示 */
+	transition: none;
+	cursor: pointer;
+}
+
+.toggleLabel::before {
+	content: '\a0';
+	display: inline-block;
+	border: 1px solid silver;
+	text-align: center;
+	width: 26px;
+	height: 27px;
+	font-weight: bold;
+}
+
+input[type="checkbox"]:checked+.toggleLabel::before {
+    content: '\2713';
+    color: #999;
+}
+
+
+/* 内容显示区域，包括文本、优先级、过期时间 */
+.todo-list li .todo-item input {
+		display: inline-block;
+		width: 300px;
+		font-family: inherit;
+		font-size: 1em;
+		line-height: 1.2em;
+		padding: 15px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		outline: 0;
+		border: 0;
+}
+
+
+.todo-list li .todo-item label {
+	display: inline-block;
+	line-height: 1.2;
+	padding: 15px;
+	transition: color 0.4s;	 /* 使添加删除线的动画慢一些 */
+}
+
+/* 优先级显示 */
+.todo-list li .todo-item .priority {
+	position: absolute;
+	font-size: 0.9em;
+	right: 100px;
+	margin-top: 3px;
+}
+
+/* 过期时间显示 */
+.todo-list li .todo-item .expire {
+	position: absolute;
+	font-size: 0.9em;
+	right: 30px;
+	margin-top: 3px;
+}
+
+/* 已完成事项 */
+.todo-list li.completed label{
+	color: #d9d9d9;
+	text-decoration: line-through;
+}
+
+
+/* 删除事项的按钮 */
+.todo-list li .delete::after {
+	content: '×';
+}
+
+.todo-list li .delete {
+	/* 平常状态不显示，hover时才显示 */
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 5px;
+	bottom: 0;
+	width: 40px;
+	height: 40px;
+	margin: auto 0;
+	font-size: 30px;
+	color: #cc9a9a;
+	transition: color 0.3s ease-out;
+}
+
+.todo-list li button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	font-family: inherit;
+	font-weight: inherit;
+	vertical-align: baseline;
+}
+
+.todo-list li .delete:hover {
+	/* 鼠标移动至删除按钮处，颜色加深，光标提示 */
+	cursor: pointer;
+	color: red;
+}
+
+.todo-list li:hover .delete {
+	/* 鼠标移动到某事项上，当前事项的删除按钮淡色显示 */
+	display: block;
+}
