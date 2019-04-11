@@ -6,3 +6,4 @@ node_modules/
 npm-debug.log
 webpack-stats.json
 db.sqlite3
+package-lock.json
